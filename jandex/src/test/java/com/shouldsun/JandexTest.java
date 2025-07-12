@@ -21,7 +21,7 @@ public class JandexTest {
             Index index = Index.of(Map.class);
             ClassInfo clazz=index.getClassByName(DotName.createSimple("java.util.Map"));
             for (MethodInfo methodInfo : clazz.methods()) {
-                log.debug("");
+                log.debug("method: {}", methodInfo.name());
             }
         } catch (IOException e) {
             throw new RuntimeException(e);
