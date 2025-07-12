@@ -23,7 +23,6 @@ public class JandexTest {
             for (MethodInfo methodInfo : clazz.methods()) {
                 log.debug("");
             }
-
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
